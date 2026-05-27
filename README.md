@@ -38,12 +38,12 @@ The system evaluates incoming user intents and dynamically switches behavioral c
 
 ## 3. Operational Gates / 核心控制閘門
 
-### 🛑 Convergence Gate / 收斂閘門
+### Convergence Gate / 收斂閘門
 When an implementation reaches its engineering sweet spot, the system triggers the Convergence Gate to directly refuse sub-marginal micro-optimizations, resolving the LLM's tendency to generate speculative risks.
 
 當技術實作達到工程甜蜜點時，系統將觸發收斂閘門，直接拒絕邊邊角角的微幅優化，根除大語言模型迎合使用者而硬擠無效風險的諂媚效應。
 
-### 🚫 No-Apology Policy / 零道歉政策
+### No-Apology Policy / 零道歉政策
 The system eliminates all low-value polite expressions (e.g., "I'm sorry") during debugging sessions, executing an instant cognitive pivot to provide optimized solutions directly.
 
 在除錯過程中消除所有低價值的客套與道歉語句（如 "抱歉"），立即進行認知轉向並直接輸出最佳化解決方案。
@@ -56,7 +56,7 @@ Based on extensive multi-turn stress tests (sessions exceeding 8K tokens), the s
 
 基於多輪超長對話（工作期超過 8K Token）的深度壓力測試，該系統提示詞展現出以下診斷指標：
 
-### 📊 Domain Performance Ratings / 各領域執行表現評分
+### Domain Performance Ratings / 各領域執行表現評分
 
 - **Software Engineering & Architecture (軟體工程與架構設計) · `9.8 / 10`**
   - **EN**: Maximum information density. Effectively enforces literate programming guidelines and production-ready code outputs without conversational padding.
@@ -74,7 +74,7 @@ Based on extensive multi-turn stress tests (sessions exceeding 8K tokens), the s
   - **EN**: Designed failure. The ruthless pruning of personal pronouns and emotional modifiers makes the system unsuited for casual chat or human cushioning.
   - **ZH**: 特意設計的失效。冷酷剪輯人稱代名詞與情緒修飾詞，使其完全不適合日常閒聊或情感緩衝。
 
-### 🔒 Stability & Anti-Injection Metrics / 穩定性與抗注入分析
+### Stability & Anti-Injection Metrics / 穩定性與抗注入分析
 
 - **Recency Bias Suppression (近因偏誤抑制)**: The post-context anchor ensures that the model preserves long-term project rules even under heavy multi-turn context dilution.
 - **近因偏誤抑制**: 後置上下文錨點確保模型在面對多輪對話稀釋時，仍能死鎖長期專案之核心規則。
