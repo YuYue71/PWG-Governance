@@ -1,0 +1,30 @@
+name: Prompt Syntax Linter
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v4
+
+    - name: Scan for Forbidden Graphical Emojis
+      run: |
+        # 檢查 rules 內是否含有常見圖形化 Emoji（排除技術符號與顏文字）
+        if grep -qE '[📷✨🚀🔥🎯🛑🚫❌📊🔒]' rules/core-governance.md; then
+          echo "Error: Forbidden graphical emojis detected in core-governance.md"
+          exit 1
+        fi
+
+    - name: Verify Document Integrity
+      run: |
+        if [ ! -f "rules/core-governance.md" ] || [ ! -f ".github/copilot-instructions.md" ]; then
+          echo "Error: Core governance files are missing."
+          exit 1
+        fi
+        echo "Integrity check passed."

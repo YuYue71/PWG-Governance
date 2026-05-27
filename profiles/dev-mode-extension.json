@@ -1,0 +1,10 @@
+{
+  "profile_name": "dev_mode_hardened_extension",
+  "version": "1.0.0",
+  "active_overrides": {
+    "temperature": 0.0,
+    "top_p": 0.1,
+    "max_tokens_clamp": 4096
+  },
+  "injected_variables": {}
+}

@@ -1,0 +1,10 @@
+{
+  "profile_name": "creative_mode_fluid_extension",
+  "version": "1.0.0",
+  "active_overrides": {
+    "temperature": 0.7,
+    "top_p": 0.9,
+    "max_tokens_clamp": 8192
+  },
+  "injected_variables": {}
+}
