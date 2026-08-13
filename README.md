@@ -90,4 +90,4 @@ touch .github/copilot-instructions.md
 ```
 
 ### License
-This project is licensed under the MIT License, see [LICENSE](./LICENSE).
+This project is licensed under the MIT License, see [LICENSE](LICENSE).
