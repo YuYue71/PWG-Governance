@@ -1,6 +1,6 @@
 # PWG-Governance
 
-[中文](https://www.google.com/search?q=%23%E4%B8%AD%E6%96%87) | [English](https://www.google.com/search?q=%23english)
+[中文](#中文) | [English](#English)
 
 ---
 
@@ -8,11 +8,11 @@
 
 ### 目錄
 
-* [關於](https://www.google.com/search?q=%23%E9%97%9C%E6%96%BC)
-* [功能](https://www.google.com/search?q=%23%E5%8A%9F%E8%83%BD)
-* [安裝](https://www.google.com/search?q=%23%E5%AE%89%E8%A3%9D)
-* [使用方式](https://www.google.com/search?q=%23%E4%BD%BF%E7%94%A8%E6%96%B9%E5%BC%8F)
-* [授權](https://www.google.com/search?q=%23%E6%8E%88%E6%AC%8A)
+* [關於](#關於)
+* [功能](#功能)
+* [安裝](#安裝)
+* [使用方式](#使用方式)
+* [授權](#授權)
 
 ### 關於
 
@@ -58,11 +58,11 @@ touch .github/copilot-instructions.md
 
 ### Table of Contents
 
-* [About](https://www.google.com/search?q=%23about)
-* [Features](https://www.google.com/search?q=%23features)
-* [Installation](https://www.google.com/search?q=%23installation)
-* [Usage](https://www.google.com/search?q=%23usage)
-* [License](https://www.google.com/search?q=%23license)
+* [About](#About)
+* [Features](#Features)
+* [Installation](#Installation)
+* [Usage](#Usage)
+* [License](#License)
 
 ### About
 
