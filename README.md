@@ -101,4 +101,4 @@ touch .github/copilot-instructions.md
 
 ### License
 
-This project is licensed under the MIT License, see [LICENSE](https://www.google.com/search?q=./LICENSE).
+This project is licensed under the MIT License, see [LICENSE](https://github.com/YuYue71/PWG-Governance/blob/main/LICENSE.md).
