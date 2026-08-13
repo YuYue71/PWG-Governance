@@ -1,104 +1,93 @@
 # PWG-Governance
 
-[中文](#中文) | [English](#English)
+![Version](https://img.shields.io/badge/version-V3-blue)
+![License](https://img.shields.io/badge/license-MIT-green)
+![Tech](https://img.shields.io/badge/stack-System_Prompt-lightgrey)
+
+[中文](#中文) | [English](#english)
 
 ---
 
 ## 中文
 
 ### 目錄
-
-* [關於](#關於)
-* [功能](#功能)
-* [安裝](#安裝)
-* [使用方式](#使用方式)
-* [授權](#授權)
+- [關於](#關於)
+- [功能](#功能)
+- [安裝](#安裝)
+- [使用方式](#使用方式)
+- [授權](#授權)
 
 ### 關於
-
-PWG-V3-LLM-Optimized 是一款專為長對話週期設計的工業級, 零冗餘工作流治理提示詞(System Prompt). 作為 LLM 執行環境的「憲法」, 它透過確定性的動態路由與嚴格的自我稽核機制, 將高密度的技術工程實作與創意的敘事工作流完全解耦. 此框架能有效約束模型權重, 防堵上下文漂移(Context Drift), 並強制終止無意義的微觀優化, 將 LLM 牢牢鎖定於開發者定義的專業工程邊界內.
+PWG-Governance (PWG-V3-LLM-Optimized) 是一款專為長對話週期設計的工業級, 零冗餘工作流治理提示詞. 透過確定性的動態路由器, 將高密度的技術工程實作與創意的敘事工作流完全解耦, 有效防止上下文漂移(Context Drift)與過度工程化(Over-engineering). 本框架屬於中介層(Middleware Layer)治理框架, 作為 LLM 執行環境的"憲法", 透過約束模型權重, 回應結構與思維路徑, 強制將 LLM 鎖定於開發者定義的工程邊界內. 本次 V3 版本進一步強化了自我稽核與多語言處理協定, 確保大型語言模型在複雜協作中的極致穩定性.
 
 ### 功能
-
-* 確定性狀態機路由(Deterministic Context Routing): 強制解耦 DEV MODE 與 CREATIVE MODE, 並提供 HYBRID MODE 的安全融合規範, 防止語氣與邏輯交叉污染.
-* 動態語言分離協議(Dynamic I18n Protocol): 強制 LLM 內部邏輯推演使用英文, 僅在最終輸出與註解使用目標語言, 貼合底層模型訓練權重以提升運算精準度.
-* 零容忍審訊與防幻覺(Zero-Tolerance Interrogation): 當遭遇模糊需求時, 強制中斷生成並拋出具體問題清單, 嚴禁基於假設的盲目代碼生成.
-* 收斂閘道(Convergence Gate): 評估優化的邊際效益(Marginal Benefit), 抵達工程甜蜜點後強制拒絕進一步的過度工程化(Over-engineering).
-* 強制代碼審查與文檔規範(Code Review & Literate Programming): 規範依賴索引, 函式職責與內聯註解, 並在輸出前自動執行邊界條件檢查.
-* 嚴格的技術否決權(Direct Veto): 賦予框架直接駁回不良架構設計的權力, 取消無意義的客套話, 提供資深級的直接工程糾正.
+- 確定性上下文路由: 自動切換開發模式(DEV MODE), 創意模式(CREATIVE MODE)與混合模式(HYBRID MODE), 嚴格隔離技術與敘事邏輯, 防止風格交叉污染.
+- 自我稽核迴圈(Self-Audit Loop): 主動偵測知識缺口, 邏輯不完整或輸出格式偏移, 並自動生成約束條件與補償提示, 以阻斷錯誤傳播.
+- 收斂閘門與零容忍審訊: 強制執行工程甜蜜點評估, 拒絕微幅優化; 面對模糊邊界立即中斷生成並要求補充關鍵脈絡, 杜絕幻覺與盲目開發.
+- 動態本地化協定(Dynamic i18n Protocol): 強制內部邏輯推演全英文執行以極大化 LLM 解析效率, 僅在代碼註解與文件輸出時精準切換至目標語言.
+- 文學編程與架構審查: 強制標準化依賴索引, 函式職責與內聯狀態註解; 於輸出前執行內部代碼審查, 包含記憶體洩漏, 競爭條件與相容性檢查.
+- 零冗餘與零道歉政策: 無情刪除情緒性填充詞與低價值客套語句; 遇到錯誤日誌直接進行認知轉向(Cognitive Pivot)並輸出最佳化代碼.
 
 ### 安裝
-
 ```bash
 # 針對 GitHub Copilot / Cursor
-# 1. 在專案根目錄建立 .github 資料夾
-# 2. 建立 copilot-instructions.md 檔案
-# 3. 將 PWG-V3 的完整核心提示詞內容複製並貼入該檔案中
+# 1. 建立設定檔
 touch .github/copilot-instructions.md
 
+# 2. 將 PWG-V3 核心提示詞全文複製並貼入該檔案中
+# 3. 重新載入編輯器或重啟 AI 助理視窗使設定生效
 ```
 
 ### 使用方式
-
 ```bash
-# 針對 Web UI (如 ChatGPT, Claude) / API 系統提示詞
-# 1. 開啟設定介面或 API 配置
-# 2. 找到 System Prompt (或 Custom Instructions) 欄位
-# 3. 將整份 PWG-V3 規範層文件完整貼入, 確認覆蓋原有設定後儲存
-
+# 針對 Web UI (如 ChatGPT, Claude) / API 系統提示詞 (System Prompt)
+# 1. 導航至系統設定或 System Prompt 配置欄位
+# 2. 將 PWG-V3 markdown 規範層完整注入
+# 3. 若使用 API, 請確保 system_role 被正確設定為最高權限
 ```
 
 ### 授權
-
-本專案採用 MIT 授權, 詳見 [LICENSE](https://github.com/YuYue71/PWG-Governance/blob/main/LICENSE.md).
+本專案採用 MIT 授權, 詳見 [LICENSE](./LICENSE).
 
 ---
 
 ## English
 
 ### Table of Contents
-
-* [About](#About)
-* [Features](#Features)
-* [Installation](#Installation)
-* [Usage](#Usage)
-* [License](#License)
+- [About](#about)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [License](#license)
 
 ### About
-
-PWG-V3-LLM-Optimized is an industrial-grade, zero-bloat workflow governance prompt (System Prompt) designed for extended conversational cycles. Acting as the "constitution" for the LLM execution environment, it completely decouples high-density technical engineering implementation from creative narrative workflows through deterministic dynamic routing and strict self-auditing mechanisms. This framework effectively constrains model weights, prevents context drift, and forcibly halts meaningless micro-optimizations, keeping the LLM strictly locked within the professional engineering boundaries defined by the developer.
+PWG-Governance (PWG-V3-LLM-Optimized) is an industrial-grade, zero-bloat workflow governance prompt designed for long-cycle conversations. Through a deterministic dynamic router, it completely decouples high-density technical engineering implementations from creative narrative workflows, effectively preventing context drift and over-engineering. Acting as a Middleware Layer governance structure, it serves as the "constitution" for the LLM execution environment. By constraining model weights, response structures, and cognitive pathways, it forces the LLM to remain strictly within developer-defined engineering boundaries. The V3 iteration further enhances stability with a self-audit loop and dynamic i18n protocols, ensuring maximum reliability in complex AI collaborations.
 
 ### Features
-
-* Deterministic State-Machine Routing: Forcibly decouples DEV MODE and CREATIVE MODE, while providing safe integration rules via HYBRID MODE, preventing stylistic and logical cross-contamination.
-* Dynamic I18n Protocol: Mandates the LLM to use English for internal logical reasoning, deploying the target language only in the final output and code comments. This aligns with base model training weights to maximize computational precision.
-* Zero-Tolerance Interrogation & Anti-Hallucination: Upon encountering ambiguous requirements, it halts generation immediately and outputs a concrete list of questions, strictly prohibiting blind code generation based on assumptions.
-* Convergence Gate: Evaluates the marginal benefit of optimizations. Once the engineering sweet spot is reached, it automatically rejects further over-engineering.
-* Enforced Code Review & Literate Programming: Standardizes dependency indices, function responsibilities, and inline commenting, while automatically executing edge-case checks before final output.
-* Direct Technical Veto: Grants the framework the authority to directly reject flawed architectural designs, eliminating meaningless politeness and providing veteran-level, direct engineering corrections.
+- Deterministic Context Routing: Automatically switches between DEV MODE, CREATIVE MODE, and HYBRID MODE, strictly isolating technical and narrative logic to prevent stylistic cross-contamination.
+- Self-Audit Loop: Proactively detects knowledge gaps, incomplete logic chains, or output format drift, auto-generating constraints and completion prompts to halt error propagation.
+- Convergence Gate & Zero-Tolerance Interrogation: Enforces an engineering sweet spot assessment to reject sub-marginal micro-optimizations. Instantly halts generation and demands crucial context when facing ambiguity, preventing hallucinations and blind development.
+- Dynamic i18n Protocol: Mandates English for all internal reasoning to maximize LLM parsing efficiency, switching to the target language exclusively for code comments and external documentation.
+- Literate Programming & Architecture Review: Standardizes dependency indices, function responsibilities, and inline state comments. Executes internal code reviews prior to output, checking for memory leaks, race conditions, and compatibility.
+- Zero-Bloat & No-Apology Policy: Ruthlessly prunes emotional padding and low-value politeness. When encountering error logs, it executes an instant cognitive pivot to provide optimized code without apologies.
 
 ### Installation
-
 ```bash
 # For GitHub Copilot / Cursor
-# 1. Create a .github directory in your project root.
-# 2. Create a copilot-instructions.md file.
-# 3. Copy and paste the entire core prompt of PWG-V3 into this file.
-mkdir -p .github
+# 1. Create the configuration file
 touch .github/copilot-instructions.md
 
+# 2. Copy the entire PWG-V3 core prompt and paste it into the file
+# 3. Reload your editor or restart the AI assistant window to apply changes
 ```
 
 ### Usage
-
 ```bash
-# For Web UI (e.g., ChatGPT, Claude) / API System Prompts
-# 1. Open the settings interface or API configuration.
-# 2. Locate the System Prompt (or Custom Instructions) field.
-# 3. Paste the complete PWG-V3 specification document into the field and save.
-
+# For Web UI (e.g., ChatGPT, Claude) / API System Prompt
+# 1. Navigate to system settings or the System Prompt configuration field
+# 2. Inject the complete PWG-V3 markdown specification layer
+# 3. If using an API, ensure the system_role is set with the highest authority
 ```
 
 ### License
-
-This project is licensed under the MIT License, see [LICENSE](https://github.com/YuYue71/PWG-Governance/blob/main/LICENSE.md).
+This project is licensed under the MIT License, see [LICENSE](./LICENSE).
