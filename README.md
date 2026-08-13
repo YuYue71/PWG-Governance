@@ -47,7 +47,7 @@ touch .github/copilot-instructions.md
 ```
 
 ### 授權
-本專案採用 MIT 授權, 詳見 [LICENSE](./LICENSE).
+本專案採用 MIT 授權, 詳見 [LICENSE](https://github.com/YuYue71/PWG-Governance/blob/main/LICENSE.md).
 
 ---
 
@@ -90,4 +90,4 @@ touch .github/copilot-instructions.md
 ```
 
 ### License
-This project is licensed under the MIT License, see [LICENSE](LICENSE).
+This project is licensed under the MIT License, see [LICENSE](https://github.com/YuYue71/PWG-Governance/blob/main/LICENSE.md).
